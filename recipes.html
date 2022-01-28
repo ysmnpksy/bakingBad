@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Baking Bad</title>
+        <meta name="author" content="Yasmin Paksoy"><meta name="description" content="Web Dev Individual Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <!-- Nav Bar -->
+        <nav>
+            <ul>
+                <li class="left">
+                    <div id=header>
+                        <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                    </div>
+                </li>
+                <li class="rightNav"><a href=essentials.html>Essentials</a></li>
+                <li class="rightNav"><a href=tips.html>Baking Tips</a></li>
+                <li class="rightNav"><a href=drinks.html>Drinks</a></li>
+                <li class="rightNav"><a class="active" href=recipes.html>Recipes </a></li>
+                <li class="rightNav"><a href=index.html>Home</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Small nav bar -->
+        <div id="smallNav">
+                    <div class="left">
+                        <div id=headerSmall>
+                            <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                        </div>
+                    </div>
+                    
+                    <select class="select-css" onchange="location = this.value;">
+                        <option value="" selected="selected">Select</option>
+                        <option value="index.html">Home</option>
+                        <option value="recipes.html">Recipes</option>
+                        <option value="drinks.html">Drinks</option>
+                        <option value="tips.html">Baking Tips</option>
+                        <option value="essentials.html">Essentials</option>
+                    </select>
+            </div>
+        
+        <h1>Recipes</h1>
+        <!-- Row 1 -->
+        <div class="wrap">
+            <div class="leftLCR">
+                <img class="recipesGallary" alt="Walters birthday breakfast dessert" src="Images/Recipes/birthday%20platter%20Cropped.png"> 
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Walt's Birthday Platter</button>
+            </div>
+            
+            <div class="rightLCR">
+                <img class="recipesGallary" alt="Blue rock candy" src="Images/Recipes/blue%20meth%20crunch%20Cropped.png">
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Blue Meth Crunch</button>
+            </div>
+            
+            <div class="centerLCR">
+                <img class="recipesGallary" alt="Cake pops of Fring's face" src="Images/Recipes/fring%20pops%20Cropped.png">
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Fring Pops</button>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="wrap">
+            <div class="leftLCR">
+                <img class="recipesGallary" alt="Cake with barrel decorations" src="Images/Recipes/barrel%20dessert%20Cropped.png"> 
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Walt's Burried Barrel Cake</button>
+            </div>
+            
+            <div class="rightLCR">
+                <img class="recipesGallary" alt="Tub full of acid dessert" src="Images/Recipes/jello%20tub%20Cropped.png">
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Jesse's Jell-O Acid Tub</button>
+            </div>
+            
+            <div class="centerLCR">
+                <img class="recipesGallary" alt="Cupcakes with rock candy" src="Images/Recipes/cupcakes%20Cropped.jpg">
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Meth Cupcakes</button>
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div class="wrap">
+            <div class="leftLCR">
+                <img class="recipesGallary" alt="Green rice krispe dessert" src="Images/Recipes/ricin%20squares%20Cropped.png"> 
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Ricin Sqaures</button>
+            </div>
+            
+            <div class="rightLCR">
+                <img class="recipesGallary" alt="Cookies of Walter in a green shirt and undies" src="Images/Recipes/tighty%20whities%20Cropped.png">
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Walt's Tighty Whities</button>
+            </div>
+            
+            <div class="centerLCR">
+                <img class="recipesGallary" alt="Cookies shaped like biker jackets" src="Images/Recipes/uncle%20jacks%20biker%20jackets%20Cropped.png">
+                <!-- button to open recipe -->
+                <button class="myBtn buttonHover">Uncle Jack's Biker Jackets</button>
+            </div>
+        </div>
+        
+        <!-- modals -->
+        <!-- done using https://www.w3schools.com/howto/howto_css_modals.asp and https://stackoverflow.com/questions/37402241/support-for-multiple-modal-single-page -->
+        <div id="myModal" class="modal">
+            <!-- content box -->
+            <div class="modal-content">
+                <!-- close button -->
+                <span class="close">&times;</span>
+                <h1>Walt's Birthday Platter</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    half a coconut, shelled<br>
+                    small amount of butter <br>
+                    2 packets of fizzy fruit candy stripes <br>
+                    50g white royal icing <br>
+                    1 can of peaches <br>
+                    1 can of whipped cream<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Grate the coconut into shavings and fry in a shallow pan with a tablespoon of butter until golden <br>
+                    2. Trim the fruit candy into lengths to form numbers, as pictured <br>
+                    3. Place the icing into a piping bag fitted with a small plain nozzle and pipe lines onto the candy to look like bacon fat <br>
+                    4. Place the peach halves on a plate and add whipped cream to form the white of the eggs. Add the coconut hash brown and bacon slices and serve <br>
+                    5. Enjoy at home, basking in the warm glow of your family's love or, alternatively, alone at n roadside diner, safe in the knowledge that you are a fucking boss <br>
+                    <br>
+                    <small>Credit: Walter Wheat</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal2" class="modal">
+            <!-- content box -->
+            <div class="modal-content">
+                <!-- close button -->
+                <span class="close">&times;</span>
+                <h1>Blue Meth Crunch</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    118ml water<br>
+                    177ml light corn syrup<br>
+                    350g sugar<br>
+                    10ml peppermint extract<br>
+                    blue gel food colouring<br>
+                    candy thermometer<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Line a baking tray with aluminium foil, or use a heatproof glass tray. Spray with non-stick baking spray <br>
+                    2. Find yourself a decent accomplice. Underachieving ex-students are a good choice, though psychologically fragile <br>
+                    3. In a medium saucepan, combine the water, corn syrup and sugar. Stir the mixture over medium heat until the sugar dissolves, then turn up the heat to bring to a boil. Stop stirring and insert the thermometer and use a pastry brush dipped in water to wet the sides of the pan (this will prevent crystals forming) <br>
+                    4. Cook the mixture until the temperature reaches 285F/140C. Immediately remove the pan from the heat and take out the thermometer. Let the mixture stand until all the bubbles have stopped forming on the surface <br>
+                    5. At some point you're going to need a distributor. But don't worry about that now <br>
+                    6. Add a few drops of peppermint flavoring and enough blue color to give the correct Blue Meth hue <br>
+                    7. Quickly pour the mixture onto the baking tray, lifting the tray from side to side to spread the mix. Don't worry if it's not perfectly smooth or has holes in it. Let the candy cool to room temperature <br>
+                    8. Once the candy has cooled, use a hammer to break it up. Put into little plastic baggies or serve as is, whichever your clients prefer <br>
+                    <br>
+                    <small>Credit: Walter Wheat</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal3" class="modal">
+            <!-- content box -->
+            <div class="modal-content">
+                <!-- close button -->
+                <span class="close">&times;</span>
+                <h1>Fring Pops</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    100g softened butter <br>
+                    100g superfine suagr <br>
+                    2 medium eggs, lightly beaten <br>
+                    100g self-raising flour <br>
+                    10g strawberry or raspberry essence <br>
+                    red gel food colour <br>
+                    15-30ml milk<br>
+                    <br>
+                    For the frosting:<br>
+                    125g soft butter<br>
+                    250g confectioners' sugar<br>
+                    15-30ml milk<br>
+                    pink gel food colour<br>
+                    1 pack brown fondant icing<br>
+                    black, pink, white and blue food colours<br>
+                    rice paper<br>
+                    large cake pop mold<br>
+                    cake pop sticks<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Preheat the oven to 350P/180C/165C fan assisted/gas mark 4 <br>
+                    2. Put all the cake ingredients except the color and milk into a large bowl and beat with a handheld electric mixer or wooden spoon until light and fluffy <br>
+                    3. Produce a deadly looking syringe from an elegant box case <br>
+                    4. Add red color little by little until the mix is a strong, deep red. Add enough milk to give a dropping consistency <br>
+                    5. Divide the mix among 9 holes in the pop cake mold <br>
+                    6. Bake for 10-15 minutes, or until well risen, golden brown and firm to the touch. Allow to cool for a couple of minutes, then turn out of the mold and transfer the cakes to a wire rack to cool completely <br>
+                    7. To make the buttercream frosting: beat the butter in a large bowl until soft. Gently add half the confectioners' sugar and beat until smooth <br>
+                    8. Slowly slide a chair across the floor, producing a.n inhuman, bloodcurdling growl <br>
+                    9. Add the remaining confectioners' sugar with a little milk, adding more as necessary to make a light fluffy icing <br>
+                    10. Add the pink food coloring little by little and mix until well combined <br>
+                    11. For each Fring you need three half—pop cakes. Trim each half—cake neatly on the flat side. Shape the rounded sides of two of the semi—spheres into narrowed shapes to make the top of the head and the jaw. Cut a thick slice from the third half—cake and sandwich this between the two shaped pieces with buttercream frosting as shown. Push a pop cake stick into the cake from underneath, taking care not to push it through the top of the head. Put a small piece of dampened fondant icing at the bottom of the head to hold it in position and stop it sliding down the stick. Leave to dry and set <br>
+                    12. Spread the head with a thin layer of buttercream frosting. Roll out the brown fondant icing on a surface lightly dusted with confectioners' sugar. Cut a piece large enough to drape over the head and smooth into position with your hands, trimming away the excess as necessary. Add a little extra icing to form a chin and nose, sticking in place with a little water. Allow to dry <br>
+                    13. This is your last chance to look at me <br>
+                    14. Paint on hair, eyes, glasses, skin folds and mouth with a paint brush and food colors. Add a rice paper tie as shown. Finally, with a sharp knife, cut away half the head to show the red cake underneath <br>
+                    15. Step outside, adjust tie (to taste), and slowly turn the head to reveal the delicious horror that lies beneath <br>
+                    <br>
+                    <small>Credit: Walter Wheat</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal4" class="modal">
+            <!-- content box -->
+            <div class="modal-content">
+                <!-- close button -->
+                <span class="close">&times;</span>
+                <h1>Walt's Burried Barrel Cake</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    350g soft butter <br>
+                    350g superfine sugar<br>
+                    6 medium eggs<br>
+                    300g self-raising flour<br>
+                    strawberry essence <br>
+                    raspberry essence <br>
+                    red gel food colour <br>
+                    pink gel food colour <br>
+                    strawberry, cherry or raspberry jelly <br>
+                    white gel food colour <br>
+                    1 pack barrel liquor chocolates <br>
+                    small amount red fondant icing <br>
+                    small amount green fondant icing <br>
+                    golden granulated sugar for dusting <br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Preheat the oven to 350-F/175C/160C fan assisted/gas mark 4. Grease two inch/20cm round cake tins. Line the bottom of one with baking paper. Line the second tin with crumpled baking paper, to give an uneven bottom to the cake <br>
+                    2. Put the butter and superfine sugar into a mixing bowl and beat with an electric mixer for about 5 minutes until very light and fluffy and pale in color <br>
+                    3. Break the eggs into a jug or small bowl and beat lightly with a fork 
+                    4. With the mixer running, add the egg little by little to the butter/sugar mix, beating well between each addition so that the mixture doesn't curdle <br>
+                    5. Gently fold the flour into the mix with a spatula <br>
+                    6. Once well blended, put about a quarter of the mix into a bowl and set aside. This will be the plain—colored top section of the cake. Divide the remaining mix into two, and place in separate bowls. Color and flavor one of these with red food color and strawberry essence and the other with pink food color and raspberry essence <br>
+                    7. Put just over half the pink mix into the bottom of one tin, keeping the surface very uneven. Smooth just over half of the red mix on top and allow to blend a little with the pink mix, to give a marbling, layered effect. Rough up the surface, making dips and peaks <br>
+                    8. Layer the remaining amounts of pink and red into the other tin, then spread the set—aside plain mix over the top, this time finishing w ith a smooth, even surface <br>
+                    9. Bake for 30-40 minutes, or until well risen and a knife inserted into the center comes out clean. Allow to cool in the tins for a few minutes before turning out onto a wire rack to cool completely <br>
+                    10. Sandwich the 2 cakes together with a layer of jelly, making sure that the 2 uneven surfaces are placed together. If the cakes have risen too evenly, cut some ups and downs with a sharp knife <br>
+                    11. The stage is now set for one of the great scenes in TV history <br>
+                    12. Paint the barrels with white food color, as shown <br>
+                    13. With a 1 inch/2.5cm cutter, make neat holes in the top of the cake. Remove the plugs of cake and push chocolate liquor barrels into the holes. <br>
+                    14. Mold a green cactus and red rocks from the fondant icing and place onto the cake. Sprinkle the surface with the granulated sugar <br>
+                    15. As an alternative to liquor barrels, why not fill the holes with other treats such as fruit, chocolate, brothers—in—law, etc.? <br>
+                    <br>
+                    <small>Credit: Walter Wheat</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal5" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Jesse's Jell-O Acid Tub</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    Plastic. Always plastic <br>
+                    275g white chocolate chips <br>
+                    270g package strawberry-flavoured Jell-O<br>
+                    Bag of body part sweets<br>
+                    Small amount white fondant icing<br>
+                    You will need a loaf-shaped silicone mould<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Melt the chocolate very slowly in a bowl over a pan of simmering water, being careful not to let it get too hot (white chocolate can 'seize' very easily) <br>
+                    2. With a pastry brush, apply a thin layer of chocolate all over the inside of the silicone mould. Chill for 10 minutes or so until set<br>
+                    3. Repeat with a second layer of chocolate; chill and repeat again as necessary until you have a solid wall of chocolate<br>
+                    4. Chill for at least an hour, then carefully peel away the silicone mould and remove the chocolate bath<br>
+                    5. Prepare the Jell-O as per the packet instructions. Chill until cold but not set, then pour carefully into the chocolate bath<br>
+                    6. Mould a faucet from the fondant icing and use a little melted chocolate to stick it to the edge of the bath. Add the body part sweets. Place on a large dish and break open to serve<br>
+                    <br>
+                    <small>Credit: Walter Wheat</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal6" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Meth Cupcakes</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    3/4 cup (1.5 sticks) butter, softened <br>
+                    3 large eggs<br>
+                    2 1/2 cups all purpose flour<br>
+                    1/2 teaspoon salt<br>
+                    1 3/4 cups granulated sugar<br>
+                    1 1/4 tablespoons vanilla extract (for a very vanilla-y taste!)<br>
+                    1 1/4 cups whole milk<br>
+                    2 1/2 teaspoons baking powder<br>
+                    3 heaping Tablespoons crystal sprinkles (I used CakeMate Pearlescent Sugar)<br>
+                    <br>
+                    For the icing:<br>
+                    3/4 cup (1.5 sticks) salted butter, softened (NOT melted)<br>
+                    3 ounces (about 1/3 block) cream cheese<br>
+                    4 cups powdered sugar<br>
+                    2 teaspoons vanilla extract (or other desired flavor, such as coconut or almond)<br>
+                    2-3 Tablespoons heavy cream (or more for desired consistency)<br>
+                    Cotton candy flavored rock candy to top (available at most candy shops or online)<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Preheat oven to 350 degrees F and add liners to cupcake pan. <br>
+                    2. Stir together flour, salt, and baking powder and set aside.<br>
+                    3. Beat butter and sugar in an electric mixer until light and fluffy.<br>
+                    4. Keep mixer on and add eggs and vanilla, beat until fully incorporated.<br>
+                    5. Add half the flour mixture and mix on low, then repeat with the remaining half.<br>
+                    6. Pour in milk and mix.<br>
+                    7. Add sprinkles and stir with a rubber spatula.<br>
+                    8. Fill each cupcake liner about 2/3 full.<br>
+                    9. Bake for 15-17 minutes, until tops are golden brown and a toothpick inserted into cupcake comes out clean. Allow the cupcakes to cool completely on a wire rack before frosting.<br>
+                    10. Beat butter and cream cheese on medium speed in an electric mixer for about one minute.<br>
+                    11. Add powdered sugar one cup at a time, beating well between each.<br>
+                    12. Add vanilla (or other flavoring) and beat.<br>
+                    13. Add 2 Tablespoons of heavy cream and beat. Continue adding more, one Tablespoon at a time, until desired consistency is reached (be VERY careful it doesn't get too liquid-y!)<br>
+                    14. Spoon buttercream into a piping bag and pipe onto cooled cupcakes.<br>
+                    15. Top with large pinch of rock candy.<br>
+                    <br>
+                    <small>Credit: Kailley @ Kailley's Kitchen</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal7" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Ricin Sqaures</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    oil for greasing <br>
+                    50g butter <br>
+                    300g mini marshmallows <br>
+                    157g Rice Krispies <br>
+                    green gel food colour <br>
+                    50g royal icing <br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Grease a 13 x 9 inch/32cm x 23cm tray bake tin with oil <br>
+                    2. Melt the butter in a large, heavy-based saucepan over low heat <br>
+                    3. Add the marshmallows and cook gently until they a.re completely melted and blended, stirring constantly. Add the green coloring and mix well <br>
+                    4. Take the pan off the heat a.nd immediately a.dd the rice krispies, mixing lightly until well coated asimal<br>
+                    5. Press the mixture into the prepared tin and spread the mixture into the corners. It will be very sticky. Flatten the top <br>
+                    6. Keep away from children at all times (unless absolutely necessary) <br>
+                    7. Let the mix cool completely in the tin before cutting into squares <br>
+                    8. Put the icing into a small piping bag fitted with a writing nozzle and pipe on letters a.nd outlines as shown <br>
+                    9. Serve right away, or store behind an electrical outlet <br>
+                    <br>
+                    <small>Credit: Walter Wheat</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal8" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Walt's Tighty Whities</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    350g flour and extra for dusting <br>
+                    10g baking powder <br>
+                    10g ground ginger <br>
+                    100g cold butter <br>
+                    150g soft brown sugar <br>
+                    45ml golden syrup <br>
+                    1 medium egg <br>
+                    <br>
+                    For the frosting: <br>
+                    white and black fondant icing <br>
+                    1 medium egg white <br>
+                    500g icing sugar <br>
+                    green food gel color <br>
+                    gingerbread man cutter <br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Take off your good clothes. You can't go home smelling like a bakery<br>
+                    2. Preheat the oven to 400F/200C/185C fan assisted/ gas mark 6. Grease 2 baking trays or line with baking paper<br>
+                    3. Put the flour, baking powder and ginger into a bowl and mix well. Cut the butter into the mixture in small pieces and rub into the flour mix with your fingertips until the mixture resembles breadcrumbs<br>
+                    4. Add the sugar, syrup and egg and mix to form a dough. Put into a plastic bag and chill for half an hour<br>
+                    5. Double check you haven't left your keys in the RV. You don't want to know what a pain in the ass that would be<br>
+                    6. Roll out the dough on a surface lightly dusted with flour. Cut out gingerbread men with the cutter and place them on the tray. Bake for 10–12 minutes or until beginning to brown around the edges. Transfer to a rack to cool and harden<br>
+                    7. Roll out the black and the white fondant icings on a surface lightly dusted with confectioners' sugar and cut out shapes for the gas masks and the Y-fronts<br>
+                    8. Put the egg white in a bowl and whisk lightly with a fork. Add the confectioners' sugar little by little, beating with a wooden spoon until the texture is of a piping consistency. Divide into three<br>
+                    9. Stick the white Y-fronts onto the men with a little water. Fill a small piping bag with plain writing nozzle with white piping icing and pipe on Y-front details<br>
+                    10. Colour a second amount of icing pale green and pipe outlines of the shirt. Allow to dry. Add a few drops of water to the pale green icing to give a runny consistency and carefully spoon into the outline of the shirt, teasing it into the corners with a small brush. Allow to dry<br>
+                    11. Colour the remaining icing dark green and pipe details onto the shirt. Stick the gas mask pieces to the head with a little water<br>
+                    12. Take a 45 in hand and stand, ready to take on whatever comes over that hill<br>
+                    <br>
+                    <small>Credit: Walter Wheat</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal9" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Uncle Jack's Biker Jackets</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    90ml corn or golden syrup <br>
+                    200g butter and extra for greasing <br>
+                    350g oats <br>
+                    handful of currents or raisins<br>
+                    pinch of salt <br>
+                    1 small pack of white and black fondant icing <br>
+                    black food gel colour <br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Keep your mouth shut if you know what's good for you <br>
+                    2. Preheat the oven to 350F/180C/165C fan a.ssisted/ga.s mark 4 <br>
+                    3. Grease a large tray-bake tin with oil or butter <br>
+                    4. Place the syrup and butter in a large saucepan and heat gently until the butter has melted. Mix well with a wooden spoon <br>
+                    5. Put the oats into a large mixing bowl and add the fruit. Add a pinch of salt then pour into the butter and syrup mixture and stir well to coat the oats. (Take care not to beat the oats to the point where they can only be identified from dental records) <br>
+                    6. Pour the mixture into the prepared tin and spread evenly to fill the tin making sure the surface is even <br>
+                    7. Bake in the preheated oven for 20-25 minutes or until golden brown. Serve this time by reading poetry, learning to play the guitar, etc. Then cut the vest shapes with a sharp knife or craft knife while the flapjacks are still warm and soft <br>
+                    8. Place the tin on a. cooling rack and leave the mixture in the tin until completely cold <br>
+                    9. Cut templates out of paper for the vest, skull, cross etc. and logos. Roll out the black icing on a. surface lightly dusted with confectioners' sugar and cut round the template to make vests. Roll out the white icing and cut out skulls and the other shapes <br>
+                    10. Stick the icing shapes to the tops of the flapjacks and add details and wording with black food color, using a small paintbrush <br>
+                    <br>
+                    <small>Credit: Walter Wheat</small>
+                </p>
+            </div>
+        </div>
+        
+        <script>
+            // gets the modal
+            var modal = document.getElementsByClassName('modal');
+            // gets the button that opens the modal
+            var btn = document.getElementsByClassName("myBtn");
+            // gets the <span> element that closes the modal
+            var span = document.getElementsByClassName("close");
+            // when the user clicks the button, opens the modal 
+            //open modal 1
+            btn[0].onclick = function() {
+                modal[0].style.display = "block";
+            };
+            //open modal 2 
+            btn[1].onclick = function() {
+                modal[1].style.display = "block";
+            };
+            //open modal 3
+            btn[2].onclick = function() {
+                modal[2].style.display = "block";
+            };
+            //open modal 4
+            btn[3].onclick = function() {
+                modal[3].style.display = "block";
+            };
+            //open modal 5
+            btn[4].onclick = function() {
+                modal[4].style.display = "block";
+            };
+            //open modal 6
+            btn[5].onclick = function() {
+                modal[5].style.display = "block";
+            };
+            //open modal 7
+            btn[6].onclick = function() {
+                modal[6].style.display = "block";
+            };
+            //open modal 8
+            btn[7].onclick = function() {
+                modal[7].style.display = "block";
+            };
+            //open modal 9
+            btn[8].onclick = function() {
+                modal[8].style.display = "block";
+            };
+            // When the user clicks on X, close the modal
+            //closes modal 1 
+            span[0].onclick = function() {
+                modal[0].style.display = "none";
+            };
+            //closes modal 2
+            span[1].onclick = function() {
+                modal[1].style.display = "none";
+            };
+            //closes modal 3
+            span[2].onclick = function() {
+                modal[2].style.display = "none";
+            };
+            //closes modal 4
+            span[3].onclick = function() {
+                modal[3].style.display = "none";
+            };
+            //closes modal 5
+            span[4].onclick = function() {
+                modal[4].style.display = "none";
+            };
+            //closes modal 6
+            span[5].onclick = function() {
+                modal[5].style.display = "none";
+            };
+            //closes modal 7
+            span[6].onclick = function() {
+                modal[6].style.display = "none";
+            };
+            //closes modal 8
+            span[7].onclick = function() {
+                modal[7].style.display = "none";
+            };
+            //closes modal 9
+            span[8].onclick = function() {
+                modal[8].style.display = "none";
+            };
+</script>
+        
+        <div class="footer">
+            <div class="wrapLRFooter">
+                <div id="footer"></div>
+                <div class="leftLR">
+                    <p>Whether you're starting for the first time or looking to dive deeper into the craziness that is Breaking Bad, we've got you covered. Check out the official website <a href="https://www.amc.com/shows/breaking-bad">here</a>.</p>
+                    <div class="h2Left">
+                        Contact Us
+                    </div>
+                    <div class="pFooter">0208 486 3046<br>
+                        info@bakingbad.com</div>
+                </div>
+                
+                <div class="rightLR">
+                    <div class="right">
+                        <div id=socialIcons>
+                            <a href="https://www.instagram.com"><img class="social" alt="Instagram logo" src="Images/instagram.png" title="Instagram"/></a>
+                            <a href="https://www.facebook.com/"><img class="social" alt="facebook logo" src="Images/facebook.png" title="Facebook"/></a>
+                            <a href="https://twitter.com/?lang=en-gb"><img class="social" alt="twitter logo" src="Images/twitter.png" title="Twitter"/></a>
+                        </div>
+                    </div>
+                    <div class="pRight">Click <a href="report.html">here</a> for my report</div>
+                </div>
+            </div>
+        </div>
+        
+        </body>
+</html>

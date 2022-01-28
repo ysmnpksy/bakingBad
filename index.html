@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Baking Bad</title>
+        <meta name="author" content="Yasmin Paksoy"><meta name="description" content="Web Dev Individual Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- Nav Bar -->
+        <nav>
+            <ul>
+                <li class="left">
+                    <div id=header>
+                        <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                    </div>
+                </li>
+                <li class="rightNav"><a href=essentials.html>Essentials</a></li>
+                <li class="rightNav"><a href=tips.html>Baking Tips</a></li>
+                <li class="rightNav"><a href=drinks.html>Drinks</a></li>
+                <li class="rightNav"><a href=recipes.html>Recipes </a></li>
+                <li class="rightNav"><a class="active" href=index.html>Home</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Small nav bar -->
+        <div id="smallNav">
+            <!-- sets smaller logo to the left -->
+            <div class="left">            
+                <div id=headerSmall>
+                    <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                </div>
+            </div>
+            
+            <!-- drop down menu -->
+            <select class="select-css" onchange="location = this.value;">
+                <option value="" selected="selected">Select</option>
+                <option value="index.html">Home</option>
+                <option value="recipes.html">Recipes</option>
+                <option value="drinks.html">Drinks</option>   
+                <option value="tips.html">Baking Tips</option>
+                <option value="essentials.html">Essentials</option>
+            </select>
+        </div>
+        
+        <!-- Slideshow -->
+        <div class="slideShow">
+            <img src="Images/Home/tighty-whities-cookies%20Cropped.png" class="slideshow-container" alt="Cookies of Walter in a green shirt and undies">
+            <!-- caption on the image with link to recipes page -->
+            <div class="captionSlide2">Who would of thought that a green shirt and tighty whities could look so good? Click <a href=recipes.html>here</a> to find out how to make these delicious cookies! </div>
+        </div>
+        <div class="slideShow">
+            <img src="Images/Home/blue-cupcakes%20Cropped.jpg" class="slideshow-container" alt="Cupcakes with blue rock candy">
+            <!-- caption on the image with link to recipes page -->
+            <div class="captionSlide1">Is there anything more iconic in Breaking Bad then blue crystal meth? Check out these blue crystal candy cupcakes <a href=recipes.html>here!</a></div>
+        </div>
+        <div class="slideShow">
+            <img src="Images/Home/barrel%20Cropped.png" class="slideshow-container" alt="Red cake with barrel decorations">
+            <!-- caption on the image with link to recipes page -->
+            <div class="captionSlide3">Don't forget to try Walt's buried barrel dessert! Although you will need appoximately $40.65 million dollars to fill the barrels... Click <a href=recipes.html>here</a> to check it out.</div>
+        </div>
+        
+        <!-- controls for next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <!-- Slideshow dots -->
+        <div id="dots">
+            <!-- changes image displayed when you click on the corresponding dot -->
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+        <!-- JS for the slideshow -->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            //controls the next and previous buttons
+            function plusSlides(n)
+            {
+              showSlides(slideIndex += n);
+            }
+            //sets the image that should be displayed 
+            function currentSlide(n)
+            {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("slideShow");
+              var dots = document.getElementsByClassName("dot");
+                
+              if(n > slides.length){
+                  slideIndex = 1
+              }    
+                
+              if(n < 1){
+                  slideIndex = slides.length
+              }
+                
+              for(i = 0; i < slides.length; i++){
+                  slides[i].style.display = "none";  
+              }
+                
+              for (i = 0; i < dots.length; i++)
+              {
+                  dots[i].className = dots[i].className.replace("active", "");
+              }
+                
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+                
+        </script>
+        
+        <!-- Introduction -->
+        <h1>Great recipes. No meth-in around.</h1>
+        <div class="contentCenter">
+            We've all gotten high on the escapades of Walt and Jessie. Now that it's come to an end and we were missing our latest fix. So, we found a new drug: baking bad.
+            <br>
+            <br>
+            98% pure but 100% edible and delicious, we share the best recipes created in homage to the TV series that we STILL can't stop talking about. A website for fans of the greatest cult show ever produced (and no gasmask is required).
+            <br>
+            <br>
+            You can be the one who bakes. 
+        </div>
+        
+        <!-- As seen on row -->
+        <hr class="linebreak"/>
+        <br>
+        <div id="smallHeading">AS SEEN ON</div>
+        <div class="row">
+            <img class="asSeenOn" src="Images/Home/as-seen-on-1.jpg" alt="Today logo">
+            <img class="asSeenOn" src="Images/Home/as-seen-on-2.jpg" alt="Buzzfeed logo">
+            <img class="asSeenOn" src="Images/Home/as-seen-on-3.jpg" alt="Food Network logo">
+            <img class="asSeenOn" src="Images/Home/as-seen-on-4.jpg" alt="Forbes Logo">
+            <img class="asSeenOn" src="Images/Home/as-seen-on-5.jpg" alt="The Chew logo">
+        </div>
+        <hr class="linebreak"/>
+        
+        <!-- Recipe of the week -->
+        <h1>RECIPE OF THE WEEK</h1>
+        
+        <div class="wrapLR">
+            <div class="leftLR">
+                <img class="recipe" src="Images/Recipes/fring%20pops%20Cropped.png" alt="Cake pops of Fring's face">
+            </div>
+            <div class="rightLR">
+                <h1>Fring Pop</h1>
+                <div class="contentCenter">
+                    Gustavo Fring’s explosive demise will forever be one of the most spectacular deaths in television history, but it’s also one of the coolest.
+                    <br>
+                    <br>
+                    One of the most iconic scenes in the show, and possibly the most shocking.. join us in recreating this moment with these cakepops.
+                    <br>
+                    <br> 
+                    Check out the recipe <a href=recipes.html>here</a>!
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="wrapLRFooter">
+                <div id="footer"></div> <!-- faded green line -->
+                
+                <div class="leftLR">
+                    <p>Whether you're starting for the first time or looking to dive deeper into the craziness that is Breaking Bad, we've got you covered. Check out the official website <a href="https://www.amc.com/shows/breaking-bad">here</a>.</p>
+                    <div class="h2Left">
+                        Contact Us
+                    </div>
+                    <div class="pFooter">0208 486 3046<br>
+                        info@bakingbad.com</div>
+                </div>
+                <div class="rightLR">
+                    <div class="right">
+                        <div id=socialIcons>
+                            <a href="https://www.instagram.com"><img class="social" alt="Instagram logo" src="Images/instagram.png" title="Instagram"/></a>
+                            <a href="https://www.facebook.com/"><img class="social" alt="Facebook logo" src="Images/facebook.png" title="Facebook"/></a>
+                            <a href="https://twitter.com/?lang=en-gb"><img class="social" alt="Twitter logo" src="Images/twitter.png" title="Twitter"/></a>
+                        </div>
+                    </div>
+                    <div class="pRight">Click <a href="report.html">here</a> for my report</div>
+                </div>
+            </div>
+        </div>
+        </body>
+</html>

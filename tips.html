@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Baking Bad</title>
+        <meta name="author" content="Yasmin Paksoy"><meta name="description" content="Web Dev Individual Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <!-- Nav Bar -->
+        <nav>
+            <ul>
+                <li class="left">
+                    <div id=header>
+                        <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                    </div>
+                </li>
+                <li class="rightNav"><a href=essentials.html>Essentials</a></li>
+                <li class="rightNav"><a class="active" href=tips.html>Baking Tips</a></li>
+                <li class="rightNav"><a href=drinks.html>Drinks</a></li>
+                <li class="rightNav"><a href=recipes.html>Recipes </a></li>
+                <li class="rightNav"><a href=index.html>Home</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Small nav bar -->
+        <div id="smallNav">
+                    <div class="left">
+                        <div id=headerSmall>
+                            <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                        </div>
+                    </div>
+                    
+                    <select class="select-css" onchange="location = this.value;">
+                        <option value="" selected="selected">Select</option>
+                        <option value="index.html">Home</option>
+                        <option value="recipes.html">Recipes</option>
+                        <option value="drinks.html">Drinks</option>
+                        <option value="tips.html">Baking Tips</option>
+                        <option value="essentials.html">Essentials</option>
+                    </select>
+            </div>
+        
+        <h1>Baking Tips and Tricks</h1>
+        <!-- Collapsibles done using https://www.w3schools.com/howto/howto_js_collapsible.asp --> 
+        
+        <!-- box for two columns -->
+        <div class="wrapLRTips">
+            <!-- left column -->
+            <div class="leftLR">
+                <h1>General</h1>
+                <button type="button" class="collapsible">Butter Consistency</button>
+                <div class="content">
+                    <p>Butter is the starting point for most baked goods and can dramatically affect their texture. There are three different consistencies of butter that recipes usually call for; softened, chilled or melted. 
+                    <br>If using softened butter, your finger should make a indent when you press into but, but should not sink in. To get the perfect consistency you should leave the button on the counter for an hour before use. 
+                    <br>Chilled butter should come straight from the fridge. This helps create flaky pockets in recipes such as pie crust. </p>
+                </div>
+                
+                <button type="button" class="collapsible">Get an Oven Thermometer</button>
+                <div class="content">
+                    <p>Unless you have a new oven, your oven temperature is likely inaccuarte. When you set your oven to 180°C, it may actually be at 190°C. While this doesn't sound like a big deal, it definetly is for baked goods. An inaccurate oven will ruin the hours you spent on these awesome breaking bad recipes and the money spent of the ingredients. Placing an over thermometer in your oven will allow you to always know the real temperature. </p>
+                </div>
+                
+                <button type="button" class="collapsible">Keep Your Oven Door Closed</button>
+                <div class="content">
+                    <p>Like we mentioned above, a ovens temperature can ruin a recipe. By opening and closing your oven every few minutes to peek at your cupcakes, you let in cool air, which interrupts your baked goods from cooking.</p>
+                </div>
+                
+                <h1>Cakes</h1>
+                <button type="button" class="collapsible">Baking Powder VS. Bakin Soda</button>
+                <div class="content">
+                    <p>You cant substitute baking powder with baking soda; they are definetly not interchnagable. Without going into too much scientific detail, you need to use soda when a acis is added to the batter, e.g. lemon. Baking soda is much stronger so don't try interchanging them.</p>
+                </div>
+                
+                <button type="button" class="collapsible">Cake Flour</button>
+                <div class="content">
+                    <p>Some recipes call for cake flour. If you don't have any on hand, you can make your own. For each cup of cake flour you need, take out two tablespoons of flour and add two tablespoons of constarch.</p>
+                </div>
+                
+                <button type="button" class="collapsible">Mix at Room Temperature</button>
+                <div class="content">
+                    <p>When ingerients are at room temperature, they mix better then ingredients which are colder. Try to get your cold ingredients as close to room temperature as you can before mixing your cake batter. </p>
+                </div>
+                
+                <h1>Cupcakes</h1>
+                <button type="button" class="collapsible">Don't Over-mix, Don't Under-mix</button>
+                <div class="content">
+                    <p>Make sure you are mising the batter just until the wet and dry ingredients are combined. Overmixing will mean that you will end up with a tough-textured cupcake. 
+                    <br>On the other hand, not getting all your ingredients mixed properly will leave you with a crumbly cupcake, so still make sure they are all combined.</p>
+                </div>
+                
+                <button type="button" class="collapsible">Fill Cupcake Pans Appropriately</button>
+                <div class="content">
+                    <p>Depending on the recipe, you could be over-filling or under-filling your cupcake liners. This could lead to your cupcakes rising, but then sinking or them overflowing. 
+                    <br>Unfortunately, most recipes don't tell you how far to fill your liners, however 2/3 full works for most cupcakes. </p>
+                </div>
+                
+                <button type="button" class="collapsible">One Batch in the Center</button>
+                <div class="content">
+                    <p>Only bake one batch at a time in the very center of the oven. This gives you the best possible results. If you must bake more than one batch at a time, make sure you rotate the cupcake pans from the top rack to bottom rack a couple times while baking to encourage even browning. And turn the pans around as well.</p>
+                </div>
+                
+            </div>
+            
+            <!-- right column -->
+            <div class="rightLR">
+                <h1>Cookies</h1>
+                <button type="button" class="collapsible">Chill Your Cookie Dough</button>
+                <div class="content">
+                    <p>Chilling your cookie dough will allow it to firm up, decreasing the possibility of your cookies spreaking when in the oven.  It also allows you to get a thicker and more even roll. After chilling, allow your cookie dough to sit at room temperature for about 10 minutes and then get rolling. </p>
+                </div>
+                
+                <button type="button" class="collapsible">Keep Cookies Soft</button>
+                <div class="content">
+                    <p>To keep leftover cookies extra soft, store them with a piece of bread. This allows the cookies to store the breads moisture and keep soft for days while the bread turns rock solid.</p>
+                </div>
+                
+                <button type="button" class="collapsible">Egg Size</button>
+                <div class="content">
+                    <p>Recipes tell you which egg size to use for a reason; using the wrong size eggs can ruin the ration of wet and dry ingredients and leave you with a weirdly textered cookie. 
+                    <br>If you can't find the right size eggs, mixing two sizes should work; for example, use a large and small egg if the recipe calls for two medium eggs.</p>
+                </div>
+                
+                <h1>Frosting</h1>
+                <button type="button" class="collapsible">Fill Piping Bags Easily</button>
+                <div class="content">
+                    <p>It can be pretty difficult to fill a piping bag with frosting without making a mess, however it can become pretty simple once you get a big cup.
+                    <br>Fit the piping bag with a tip, then plce it in a big cup, folding the sides down around the cup. Then you can easily scoop the frosting in the cup without making a mess. </p>
+                </div>
+                
+                <button type="button" class="collapsible">Crumb Coat</button>
+                <div class="content">
+                    <p>A crumb coat is a light coating of frosting around the cake that smooths and seals in crumbs. Take whatever frosting you are using, apply a thin layer of frosting around the cake and chill it before frosting in again. Using a turntable and straight edge spatula will make this simple.</p>
+                </div>
+                
+                <button type="button" class="collapsible">Smooth your Cake</button>
+                <div class="content">
+                    <p>Use a paper towel to finish smoothing any imperfections that are left from frosting the cake. Take a paper towel that has no raised patterns on it and place it on the cake. Then rub small circular motions using a fondant smoother. </p>
+                </div>
+                
+                <h1>Bread</h1>
+                <button type="button" class="collapsible">Measure Carefully</button>
+                <div class="content">
+                    <p>Small differences in the amount of water, yeast or salt can make a big difference to your loaf. Make sure you measure the ingedients perfectly; when measuring flour don't pack it in tight, but instead </p>
+                </div>
+                
+                <button type="button" class="collapsible">Crumb Coat</button>
+                <div class="content">
+                    <p>A crumb coat is a light coating of frosting around the cake that smooths and seals in crumbs. Take whatever frosting you are using, apply a thin layer of frosting around the cake and chill it before frosting in again. Using a turntable and straight edge spatula will make this simple.</p>
+                </div>
+                
+                <button type="button" class="collapsible">Smooth your Cake</button>
+                <div class="content">
+                    <p>Use a paper towel to finish smoothing any imperfections that are left from frosting the cake. Take a paper towel that has no raised patterns on it and place it on the cake. Then rub small circular motions using a fondant smoother. </p>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
+        
+        </body>
+</html>

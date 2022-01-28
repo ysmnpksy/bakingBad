@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Baking Bad</title>
+        <meta name="author" content="Yasmin Paksoy"><meta name="description" content="Web Dev Individual Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <!-- Nav Bar -->
+        <nav>
+            <ul>
+                <li class="left">
+                    <div id=header>
+                        <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                    </div>
+                </li>
+                <li class="rightNav"><a href=essentials.html>Essentials</a></li>
+                <li class="rightNav"><a href=tips.html>Baking Tips</a></li>
+                <li class="rightNav"><a class="active" href=drinks.html>Drinks</a></li>
+                <li class="rightNav"><a href=recipes.html>Recipes </a></li>
+                <li class="rightNav"><a href=index.html>Home</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Small nav bar -->
+        <div id="smallNav">
+                    <div class="left">
+                        <div id=headerSmall>
+                            <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                        </div>
+                    </div>
+                    
+                    <select class="select-css" onchange="location = this.value;">
+                        <option value="" selected="selected">Select</option>
+                        <option value="index.html">Home</option>
+                        <option value="recipes.html">Recipes</option>
+                        <option value="drinks.html">Drinks</option>
+                        <option value="tips.html">Baking Tips</option>
+                        <option value="essentials.html">Essentials</option>
+                    </select>
+            </div>
+        
+        <h1>Drinks</h1>
+        <!-- Row 1 -->
+        <div class="wrap">
+            <div class="leftLCR">
+                <img class="recipesGallary" alt="Blue margarita" src="Images/Drinks/BLUE%20MARGARITA%20Cropped.jpg"> 
+                <button class="myBtn buttonHover">Blue Margarita</button>
+            </div>
+            
+            <div class="rightLCR">
+                <img class="recipesGallary" alt="blue slushie" src="Images/Drinks/blue%20rasberry%20slush%20Cropped.jpg">
+                <button class="myBtn buttonHover">Blue Raspberry Slush</button>
+            </div>
+            
+            <div class="centerLCR">
+                <img class="recipesGallary" alt="Green cocktail and a bag of funyans" src="Images/Drinks/captain%20cook%20Cropped.jpg">
+                <button class="myBtn buttonHover">Captain Cook</button>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="wrap">
+            <div class="leftLCR">
+                <img class="recipesGallary" alt="Blue shot in a beaker" src="Images/Drinks/shots%20Cropped.jpg"> 
+                <button class="myBtn buttonHover">Hesienberg Shots</button>
+            </div>
+            
+            <div class="rightLCR">
+                <img class="recipesGallary" alt="White cocktail with blue rock candy rim" src="Images/Drinks/tequila%20cocktail%20Cropped.jpg">
+                <button class="myBtn buttonHover">Party like Pinkman</button>
+            </div>
+            
+            <div class="centerLCR">
+                <img class="recipesGallary" alt="Golden drink in a glass with ice" src="Images/Drinks/the%20mr%20whites%20Cropped.jpg">
+                <button class="myBtn buttonHover">The Mr. White</button>
+            </div>
+        </div>
+        
+        <!-- modals -->
+        <!-- done using https://www.w3schools.com/howto/howto_css_modals.asp and https://stackoverflow.com/questions/37402241/support-for-multiple-modal-single-page -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Blue Margarita</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    For the ice chips:<br>
+                    Water<br>
+                    Blue food coloring<br>
+                    <br>
+                    For the salt:<br>
+                    Coarse salt such as Kosher salt or sea salt<br>
+                    Blue food coloring<br>
+                    <br>
+                    For the blue margaritas:<br>
+                    4 oz tequila<br>
+                    2 oz triple sec<br>
+                    2 oz freshly squeezed lime juice<br>
+                    2 oz blue curacao<br>
+                    2 teaspoons superfine sugar<br>
+                    1 lime, cut into wedges.<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    For the ice chips:<br>
+                    1. Pour water onto a baking sheet, creating a 1/4″ thick layer of water, and leaving plenty of room so that the water doesn’t spill out. Squeeze 4 drops of blue food coloring on top and mix around with a spoon until even. Add more drops until you achieve a strong blue color (6-8 drops, typically). It will lighten up a bit as it freezes.<br>
+                    2. Place the sheet in the freezer on an even surface and let freeze until ready to serve (at least 2 hours).<br>
+                    3. When ready to serve, remove the baking sheet from the freezer. Using a mallet, smash sections of the ice sheet and then carefully use a fork to further pry pieces apart. Drop them in a glass and serve!<br>
+                    <br>
+                    For the blue salt:<br>
+                    1. Preheat the oven to 350 degrees F.<br>
+                    2. As you wait for the ice to freeze, put the salt into a sandwich bag (use as much salt as you think you will need to rim the amount of margaritas you plan to make). Add a dropsof blue food coloring, close the sandwich bag, and use your hands to work the salt and dye around until all of the salt is evenly colored. Repeat until you reach your desired color.<br>
+                    3. Pour the salt out onto a baking sheet and bake for 10 minutes to remove any moisture from the dye.<br>
+                    <br>
+                    For the margaritas:<br>
+                    1. Add the tequila, triple sec, lime juice, blue curacao, and sugar to a mixer filled halfway with ice and shake well.<br>
+                    <br>
+                    Put it all together:<br>
+                    1. Rub a lime wedge on the rim of your glass. Place the Blue Salt onto a small plate and dip the rim of your glass in the salt, turning it to evenly coat. Flip the glass right-side up and let it dry for a few seconds. Add your Blue Ice Chips and then pour in your margarita.<br>
+                    <br>
+                    <small>Credit: Morgan @ Host the Toast</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Blue Raspberry Slush</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    3 cups pineapple juice <br>
+                    1 cup lemon juice<br>
+                    1 cup “blue raspberry” syrup<br>
+                    1/2 cup sugar<br>
+                    1 cup water<br>
+                    2 cans ginger ale<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Combine everything but the ginger ale in a freezer-safe container. <br>
+                    2. Taste and adjust for sweetness if necessary- blue syrups will vary. Freeze until solid.<br>
+                    3. About an hour before serving, remove frozen mixture from freezer and set out to begin to thaw. Check back occasionally, and start breaking up mixture with a fork when possible. <br>
+                    4. Combine with ginger ale and stir until a no large pieces remain, and mixture is slushy and pourable.<br>
+                    <br>
+                    <small>Credit: Andie @ Baking Bit</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Captain Cook</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    1oz pepper-infused vodka<br>
+                    3/4oz pineapple gomme syrup<br>
+                    1/4oz lemon juice<br>
+                    1/4oz orange juice<br>
+                    4oz beer (Schraderbrau if you've got it, a nice saison if you don't)<br>
+                    Blue Curaçao<br>
+                    Funyuns<br>
+                    Sea salt<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Drop the vodka, pineapple, lemon, and orange juice into a shaker full of ice and shake it. <br>
+                    2.Take your goblet and dip the rim in a mixture of crushed Funyuns and sea salt. <br>
+                    3. Pour the mixture in the goblet, then add the beer and a splash of Blue Curaçao. <br>
+                    4. Mix it up and it'll be the color of the Funyuns bag. <br>
+                    <br>
+                    <small>Credit: Andy Kryza @ Thrillist</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal4" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Hesienberg Shots</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    1/2 lb dry ice<br>
+                    5 parts Vodka<br>
+                    2 parts Blue Curacao<br>
+                    juice from 2 Lemons<br>
+                    ice<br>
+                    mini glass beaker<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Squeeze the juice from two lemons into a martini shaker. <br>
+                    2. Add the Vodka, Blue Curacao and Ice. Give it a good shake! <br>
+                    3. Next, strain the cocktail mixture into a measuring cup. Put an appropriate size funnel into the mini beaker. Pour the liquid into the beaker. <br>
+                    4. Next, break the bag of dry ice into small chips while it is still in the bag. Put a heavy cloth underneath it. The opening for the beaker is really small, so the ice chips have to be small. Use chopsticks to gently plop the ice chips into the beaker.<br>
+                    <br>
+                    <small>Credit: lmnopeas @ Instructables</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal5" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>Party like Pinkman</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    2 oz tequila<br>
+                    3/4 oz lemon juice<br>
+                    1/4 oz simple syrup<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Fill a “blue meth” rimmed old fashioned glass with ice <br>
+                    2. In a shaker add tequila, lemon juice and simple syrup<br>
+                    3. Shake with ice and strain into the old fashioned glass<br>
+                    <br>
+                    <small>Credit: Greg @ Simple Cocktails</small>
+                </p>
+            </div>
+        </div>
+        <div id="myModal6" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1>The Mr. White</h1>
+                <div class="h2Left">Ingredients</div>
+                <p>
+                    2oz rye whiskey<br>
+                    2 barspoons creme de cacao<br>
+                    1 barspoon muscovado<br>
+                    4 dashes Angostura bitters<br>
+                    Absinthe rinse<br>
+                    A fat stack of scrilla<br>
+                </p>
+                <div class="h2Left">Directions</div>
+                <p>
+                    1. Stir all ingredients except the absinthe together<br>
+                    2. Pour it over rocks in an absinthe-rinsed glass<br>
+                    <br>
+                    <small>Credit: Andy Kryza @ Thrillist</small>
+                </p>
+            </div>
+        </div>
+        
+        <script>
+            // Get the modal
+            var modal = document.getElementsByClassName('modal');
+            // Get the button that opens the modal
+            var btn = document.getElementsByClassName("myBtn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close");
+            // When the user clicks the button, open the modal 
+            btn[0].onclick = function() {
+                modal[0].style.display = "block";
+            };
+            
+            btn[1].onclick = function() {
+                modal[1].style.display = "block";
+            };
+            
+            btn[2].onclick = function() {
+                modal[2].style.display = "block";
+            };
+            btn[3].onclick = function() {
+                modal[3].style.display = "block";
+            };
+            
+            btn[4].onclick = function() {
+                modal[4].style.display = "block";
+            };
+            
+            btn[5].onclick = function() {
+                modal[5].style.display = "block";
+            };
+            // When the user clicks on <span> (x), close the modal
+            span[0].onclick = function() {
+                modal[0].style.display = "none";
+            };
+            span[1].onclick = function() {
+                modal[1].style.display = "none";
+            };
+            span[2].onclick = function() {
+                modal[2].style.display = "none";
+            };
+            span[3].onclick = function() {
+                modal[3].style.display = "none";
+            };
+            span[4].onclick = function() {
+                modal[4].style.display = "none";
+            };
+            span[5].onclick = function() {
+                modal[5].style.display = "none";
+            };
+</script>
+        
+        <div class="footer">
+            <div class="wrapLRFooter">
+                <div id="footer"></div>
+                <div class="leftLR">
+                    <p>Whether you're starting for the first time or looking to dive deeper into the craziness that is Breaking Bad, we've got you covered. Check out the official website <a href="https://www.amc.com/shows/breaking-bad">here</a>.</p>
+                    <div class="h2Left">
+                        Contact Us
+                    </div>
+                    <div class="pFooter">0208 486 3046<br>
+                        info@bakingbad.com</div>
+                </div>
+                
+                <div class="rightLR">
+                    <div class="right">
+                        <div id=socialIcons>
+                            <a href="https://www.instagram.com"><img class="social" alt="Instagram logo" src="Images/instagram.png" title="Instagram"/></a>
+                            <a href="https://www.facebook.com/"><img class="social" alt="facebook logo" src="Images/facebook.png" title="Facebook"/></a>
+                            <a href="https://twitter.com/?lang=en-gb"><img class="social" alt="twitter logo" src="Images/twitter.png" title="Twitter"/></a>
+                        </div>
+                    </div>
+                    <div class="pRight">Click <a href="report.html">here</a> for my report</div>
+                </div>
+            </div>
+        </div>
+        
+        </body>
+</html>

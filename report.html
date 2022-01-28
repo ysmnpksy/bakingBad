@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Baking Bad</title>
+        <meta name="author" content="Yasmin Paksoy"><meta name="description" content="Web Dev Individual Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+        <!-- Nav Bar -->
+        <nav>
+            <ul>
+                <li class="left">
+                    <div id=header>
+                        <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                    </div>
+                </li>
+                <li class="rightNav"><a href=essentials.html>Essentials</a></li>
+                <li class="rightNav"><a href=tips.html>Baking Tips</a></li>
+                <li class="rightNav"><a href=drinks.html>Drinks</a></li>
+                <li class="rightNav"><a href=recipes.html>Recipes </a></li>
+                <li class="rightNav"><a href=index.html>Home</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Small nav bar -->
+        <div id="smallNav">
+                    <div class="left">
+                        <div id=headerSmall>
+                            <img src="Images/baking-bad-logo.png" alt="Baking Bad logo">
+                        </div>
+                    </div>
+                    
+                    <select class="select-css" onchange="location = this.value;">
+                        <option value="" selected="selected">Select</option>
+                        <option value="index.html">Home</option>
+                        <option value="recipes.html">Recipes</option>
+                        <option value="drinks.html">Drinks</option>
+                        <option value="tips.html">Baking Tips</option>
+                        <option value="essentials.html">Essentials</option>
+                    </select>
+            </div>
+        
+        <h1>Report by Yasmin Paksoy</h1>
+        <div class="h2Left">Introduction</div>
+        <p>This site is a recipe website inspired by the tv show Breaking Bad. All of the recipes and drinks are ones that are were either made on the show, such as Walt's Birthday Platter, or are inspired by the scenes on the show, such as Walt's Burried Barrel Cake. </p>
+        
+        <div class="h2Left">Background</div>
+        <p>The target audience for this site is fans of the show Breaking Bad. This includes people of any ages. 
+            <br>
+            <br>
+            There arent many stakeholders of this website as it is a blog. The few stakeholders include the owner of the blog, myself, the creators of the recipes that are featured on the website and Breaking Bad fans who use the website. 
+            <br>
+            <br>
+            The idea for this website came from the book <a href="https://www.amazon.co.uk/Game-Scones-Updated-final-season/dp/1409181219/ref=sr_1_1?crid=1VPP572M0OIRJ&keywords=game+of+scones&qid=1578765550&s=books&sprefix=game+of+sco%2Cstripbooks%2C191&sr=1-1">Game of Scones - All Men Must Dine</a>. This book is a recipe book inspired by the TV shows Game of Thrones. Its aimed at Game of Thrones fans and is full of recipes of the food mentioned in the show and desserts inspired by some of the most iconic scenes. The book consists of images of the desserts with the ingredients and directions listen beside. All the text in the book contains witty jokes and puns about the show to engage fans. This was the main inspiration for my website; I wanted to make a site where fans of one of my favourite shows, Breaking Bad, could find recipes that remind them of some of the most popular scenes from the show.
+            <br>
+            <br>
+            The layout for the recipes and drinks page was inspired by the website <a href="https://www.bakingmad.com/recipes/bread-dough">Baking Mad</a>. This is a baking website which consists of several different pages of different categories; each page has rows of square images with the name of the dessert underneath, which takes you to the recipe when clicked. This was the main inspiration for the way i decided to lay out my website, as it has a very clean look and is not confusing for the user.
+            <br>
+            <br>
+            Another source of inspiration for this website was the official <a href="https://www.amc.com/shows/breaking-bad">Breaking Bad website</a>.  I used this as inspiration for the colour scheme, logos and font style. The main colour on this page and on the Breaking Bad logo is a dark green, and the logo is inspired by the periodic table. I used this as inspiration and duplicated this into my website. 
+        </p>
+        
+        <div class="h2Left">Planning</div>
+        <p>
+            To ensure accessibility on my website I did many different things, the first of which was to use a dyslexia-friendly font. The font I chose was Arial, which is a sans-serif font, making it easier for dyslexic people to read. I also made sure to include alt tags on all of my images, so that visually impaired users would still be able to understand what the image shows. I made sure not to use colours which were too similar and difficult to read also; all of my text is black, with headings being a dark green which contrasts well with the white background. 
+            <br>
+            <br>
+            To ensure usability in my website, I made sure to be consistent; all of the pages have the same header and footer and use the same font styles and colours so users get to have a consistent experience and don't have to waste time trying to figure out new layouts and elements. 
+            <br>
+            <br>
+            Additionally, to ensure usability I did my best to make my site responsive; most buttons have a hover effect so users are able to tell that they are clickable. For example, the buttons on my recipes page have a shadow when hovered over and the buttons that control the slideshow on the home page are animated and slowly turn a darker grey when hovered over. 
+            <br>
+            <br>
+            Another thing I did to ensure usability was to use @media tags to make sure some aspects, such as the navigation bar and margins, change when the website is viewed on a small browser size. This ensures that the website is still usable if users want to have two windows up on their browser or are viewing the website on a smaller tablet screen.
+        </p>
+        
+        <div class="h2Left">Implementation</div>
+        <h3>Modals</h3>
+        <p>
+            When coding this website, I wanted to use modals for the recipes and drinks pages. To do this, I researched and found this code from w3schools, which gave me a basic template to work with. I lifted the CSS straight into my code and left most of the colours as they were neutral tones which worked well with my colour scheme. Using the example on the website I wrote the HTML and copied over the Javascript into my page. However, as I tried to put multiple modals into my page, this code didn't work. I then had to research how to make modals work when there was multiple on a page and found this post on StackOverflow. I used the JavaScript on this post and adapted it to my HTML, adding multiple different lines of code to make sure my modals opened and the close buttons worked. 
+            <br>
+            <br>
+            I then added CSS to edit my buttons, so that the buttons that made up the modals fit in well with my website. I used basic code from this w3schools article. I changed the colours and adding more code to change the width to match the images on my recipes page to give it a cleaner look. </p>
+        
+        <h3>Collapsible Box</h3>
+        <p>I wanted to use collapsible boxes on my tips page so that the page looked cleaner and wasn't only full of text. To do this, i used this code on w3schools. I copied over the CSS but edited it, changing attributes such as padding, margins and width. I left most of the colours the same as they were neutral tones that looked well with my colour scheme. I then used the example HTML on the site to write my own, lining mine up in two columns. Lastly, I copied over the JavaScript from this article to my page, to make my buttons work. </p>
+        
+        <h3>Slideshow</h3>
+        <p>I wanted to include a slideshow on my home page so that users could have a look at the multiple different recipes of baked good the websites includes in a way that was more interactive and pleasing o the eye than having a gallery of images. I used this page w3schools to do this; I based my CSS on the CSS example on the tutorial, changing most things such as the width, padding and colour of the previous and next buttons, the colour the buttons turned when hovered on, and the positioning, size and colour of the caption text boxes, creating three different ones so I could have the text on a different position on each image. I also added dots to the bottom of my slideshow as the example had done to allow users to see the which image they were on and how many there are in total. I then added my own HTML, basing it on the tutorial code and copies over the JavaScript from the example to make my slideshow work. </p>
+        
+        <h3>Resources used</h3>
+            <p>The main library I used when needing references or examples was w3schools. I also used stackoverflow to search for answers on problems i was having. While writing my code, I used the validator to make sure I didnt have mistakes in my code and fixed the one I had made.</p>
+        
+        <div class="h2Left">Evaluation</div>
+        <h3>What worked well</h3>
+        <p>I think the modal boxes was the best part of my website; using modal boxes instead of linking each button to a new page which had the recipe details would have left the website very messy looking and complicated to use; users would have had to go back or navigate back to the recipes page using the navigation bar. An alternative to this would have been listing the images and the directions side by side, however, this would leave the page with too much text to be aesthetically pleasing. The modal boxes were the perfect compromise; there didn't have to be too many pages created but the recipes page still looked minimalist. 
+            <br>
+            <br>
+            Another thing that worked well in my website was the slideshow; giving users interactive images with links to other pages is a good way to introduce them to a website; it allows users to get a sense of what the website is about while letting them explore further and without too much thought. The slideshow also looks aesthetically pleasing and having multiple images in such a small amount of space allows the page not to look crowded. 
+            <br>
+            <br>
+            Another thing that works well on my website is how it adapts to resizing; I've used percentage values for the width of most elements and vw units for the font size of most text. These allow my website to adapt nicely when the screen size is adjusted. I've also included a scend navigation bar which consists of a drop down menu. This replaces the main one when the screen size gets too small for it to fit, which I've done using @media tags.</p>
+        <h3>Improvements</h3>
+        <p>Unfortunately, the footer on my Baking Tips page didn't work. As the page size grew when the collapsible was opened, the footer started to go over the text. To combat this, I tried to adjust the height of the page so it grew automatically but was unable to do so. I also tried including a sticky footer on this page so that it was always at the bottom, no matter what the height of the page was, but the footer started appearing at the top. If I had more time I would try to make the footer work on this page so that it was at the very bottom of the page and the page height grew as the collapsibles were opened. 
+            <br>
+            <br>
+            If I had more time I would also try to change the essentials page; I think it would be more pleasing if it was more interactive. The page, while getting the relevant information across, is very basic in its layout. It may become difficult to navigate as more items are added to the page. I would have liked to have categories which open new pages with the essential products listed as buttons opening collapsibles or modals.  
+            <br>
+            <br>
+            Another thing I think can be improved on this website is the overall decoration; while I've tried to keep it clean and sophisticated, I think it may look too simple. A little more colour or boarders around containers may have made it look more luxurious. I also think that the website doesn't represent Breaking Bad as much as I would have liked;  the show has a much darker atmosphere, which is something I was cautious of including in the fear it would make the website look too dark and make it difficult for users to look at and read the text.</p>
+        
+        <div class="h2Left">References</div>
+        <p>
+            V. Kulhade. (2016). Support for Multiple Modal Single Page. [online] Stack Overflow. Available at: [https://stackoverflow.com/questions/37402241/support-for-multiple-modal-single-page](https://stackoverflow.com/questions/37402241/support-for-multiple-modal-single-page) [Accessed 10 Jan. 2020].
+            <br>
+            <br>
+            [W3schools.com](http://w3schools.com/). (2020). CSS Buttons. [online] Available at: [https://www.w3schools.com/css/css3_buttons.asp](https://www.w3schools.com/css/css3_buttons.asp) [Accessed 10 Jan. 2020].
+            <br>
+            <br>
+            [W3schools.com](http://w3schools.com/). (2020). How To Create a Collapsible. [online] Available at: [https://www.w3schools.com/howto/howto_js_collapsible.asp](https://www.w3schools.com/howto/howto_js_collapsible.asp) [Accessed 10 Jan. 2020].
+            <br>
+            <br>
+            [W3schools.com](http://w3schools.com/). (2020). How To Create a Slideshow. [online] Available at: [https://www.w3schools.com/howto/howto_js_slideshow.asp](https://www.w3schools.com/howto/howto_js_slideshow.asp) [Accessed 10 Jan. 2020].
+            <br>
+            <br>
+            [W3schools.com](http://w3schools.com/). (2020). W3.CSS Modal. [online] Available at: [https://www.w3schools.com/w3css/w3css_modal.asp](https://www.w3schools.com/w3css/w3css_modal.asp) [Accessed 10 Jan. 2020].
+        </p>
+        
+        <div class="h2Left">Appendices</div>
+        <h3>Sitemap</h3>
+        <img class="report" alt="Sitemap of website" src="Images/Report/sitemap-page-001.jpg">
+        
+        <h3>Wireframes</h3>
+        <p>Home Page</p>
+        <img class="wireframe" alt="Home page wireframe" src="Images/Report/index-wireframe.jpg">
+        <p>Recipes Page</p>
+        <img class="wireframe" alt="Recipes page wireframe" src="Images/Report/recipe-wireframe.jpg">
+        <p>Drinks Page</p>
+        <img class="wireframe" alt="Recipes page wireframe" src="Images/Report/drinks-wireframe.jpg">
+        <p>Baking Tips Page</p>
+        <img class="wireframe" alt="Baking Tips page wireframe" src="Images/Report/tips-wireframe.jpg">
+        <p>Essentials Page</p>
+        <img class="wireframe" alt="Essentials page wireframe" src="Images/Report/essentials-wireframe.jpg">
+        
+        <h3>W3C Markup Validator</h3>
+        <img class="validator" src="Images/Report/validator-screenshot.png" alt="Markup Validator screenshot">
+        
+        
+        <div class="footer">
+            <div class="wrapLRFooter">
+                <div id="footer"></div>
+                <div class="leftLR">
+                    <p>Whether you're starting for the first time or looking to dive deeper into the craziness that is Breaking Bad, we've got you covered. Check out the official website <a href="https://www.amc.com/shows/breaking-bad">here</a>.</p>
+                    <div class="h2Left">
+                        Contact Us
+                    </div>
+                    <div class="pFooter">0208 486 3046<br>
+                        info@bakingbad.com</div>
+                </div>
+                
+                <div class="rightLR">
+                    <div class="right">
+                        <div id=socialIcons>
+                            <a href="https://www.instagram.com"><img class="social" alt="instagram logo" src="Images/instagram.png" title="Instagram"/></a>
+                            <a href="https://www.facebook.com/"><img class="social" alt="facebook logo" src="Images/facebook.png" title="Facebook"/></a>
+                            <a href="https://twitter.com/?lang=en-gb"><img class="social" alt="twitter logo" src="Images/twitter.png" title="Twitter"/></a>
+                        </div>
+                    </div>
+                    <div class="pRight">Click <a href="report.html">here</a> for my report</div>
+                </div>
+            </div>
+        </div>
+        
+        </body>
+</html>
